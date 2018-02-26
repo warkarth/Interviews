@@ -1,3 +1,4 @@
+#isPalindromo(cadena = "anita lava la tina") -> True
 
 def isPalindromo(cadena):
 	s = cadena.replace(" ","")

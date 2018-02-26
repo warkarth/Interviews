@@ -1,3 +1,6 @@
+#isPrimo(5) -> False
+#F(7) ->  2,3,5,7
+
 def isPrimo(number):
 	for x in range(2,number):
 		if number % x == 0:

@@ -1,3 +1,5 @@
+#isEqual(cad1: "abcd", cad2= "abcd") -> True
+
 def isEqual(cad1,cad2):
 	diccCad = {}
 
