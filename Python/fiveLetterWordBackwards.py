@@ -1,23 +1,22 @@
-cad = "Today is a goood day" # -> yadoT is a good day"
+cad = "Today is a goood day" # -> yadoT is a dooog day
 
 
-def funcion(str):
-  arreglo = []
-  i = 0
+def fiveWordBackard(cad):
   cadena = ""
+  oracion = cad.split()
+  i = 0
 
-  arreglo = str.split()
-  for x in arreglo:
-    if len(x) >= 5:
-      for letra in reversed(x):
-        arreglo[i] += letra
-      i += 1
+  for palabra in oracion:
+    if len(palabra) >= 5:
+      oracion[i] = ""
+      for letra in reversed(palabra):
+        oracion[i] += letra
+    i += 1
   
-  for x in arreglo:
+  for x in oracion:
     cadena += (x+" ")
     
   return cadena
   
-a = funcion(cad)
 
-print(a)
+print(fiveWordBackard(cad))
